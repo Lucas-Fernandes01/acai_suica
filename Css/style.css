@@ -1,40 +1,116 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; /* FONTE DO SITE */
+}
+
+/* FONTE PARA MOBILE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+header {
+  background-color: rebeccapurple;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  border-radius: 8px;
+}
+
+.logo-text h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+/* MENU */
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.95rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.nav-links a:hover {
+  color: wheat;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.login-btn {
+  background: linear-gradient(60deg, rgb(143, 0, 209), rgb(85, 3, 14));
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 44, 130, 0.2);
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 44, 130, 0.3);
+}
+
+/* Responsividade Mobile */
+
+@media (max-width: 768px) {
   header {
-    background-color: #6a017e;
-    font-family: Georgia;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    flex-direction: column;
+    padding: 15px;
   }
-  
-  nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+  .logo-container {
+    margin-bottom: 15px;
   }
-  
-  nav a:hover {
-    text-decoration: underline;
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
-  
-  main {
-    margin-top: 20px;
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
   }
-  
-  footer {
-    margin-top: 40px;
-    text-align: center;
-    color: gray;
-  }
-  
+}
