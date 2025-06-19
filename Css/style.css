@@ -114,3 +114,40 @@ nav {
     gap: 15px;
   }
 }
+
+/* Tela Login */
+
+.form-box {
+  max-width: 400px;
+  margin: 30px auto;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.form-box label {
+  display: block;
+  margin-top: 10px;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.form-box button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #6a017e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #8905a0;
+}
