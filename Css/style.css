@@ -239,17 +239,39 @@ nav {
 .footer {
   background: linear-gradient(to bottom, rgb(88, 3, 109), rgb(0, 0, 0));
   color: white;
-  padding: 40px 20px 20px;
+  padding: 10px 10px 10px;
   font-family: 'Poppins', sans-serif;
 }
 
 .footer-container {
-  display: flex;
+  display: table;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
-  max-width: 1200px;
-  margin: auto;
+  gap: 1px;
+  max-width: 1000px;
+  margin: 20px;
+}
+
+.footer-container iframe {
+  width: 400px;
+  position: relative;
+  top: -340px;
+  left: 700px;
+
+  height: 180px;
+  border-radius: 40px;
+  border: none;
+  box-shadow: 0 2px 10px rgb(0, 0, 0);
+
+}
+ 
+
+
+.footer-container .text-map {
+  position: relative;
+  top: -350px;
+  left: 800px;
+  width: 200px;
 }
 
 .footer-section {
@@ -259,11 +281,12 @@ nav {
 
 .footer-section h3 {
   margin-bottom: 15px;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   border-bottom: 2px solid white;
   display: inline-block;
-  padding-bottom: 5px;
 }
+
+
 
 .footer-section p,
 .footer-section a {
@@ -276,8 +299,10 @@ nav {
 }
 
 .footer-section a:hover {
-  color: #ff0077;
-  text-decoration: underline;
+  color: #e41274;
+  text-decoration: none;
+  transform:  translateY(-3px);
+  transition: color 0.2s ease;
 }
 
 .social-links a {
@@ -291,21 +316,18 @@ nav {
 
 .footer-bottom {
   text-align: center;
-  padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  font-size: 0.9rem;
-  color: #ccc;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.712);
+  font-size: 1.0rem;
+  color: #ffffff;
 } 
 
-.footer-map {
-  width: 100%;
-  max-width: 220px;
-  border-radius: 50px;
-}
+
+
 /* Ícones Font Awesome */
 .footer-section i {
   color: #ffd54f;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* DESTAQUES */
@@ -327,20 +349,27 @@ nav {
   gap: 20px;
 }
 
+.cards :hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
 .card {
-  background: white;
+  background: rgb(223, 221, 208);
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.89);
   max-width: 250px;
   text-align: center;
-  padding: 20px;
+  padding: 12px;
 }
 
 .card img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 8px;
 }
+
+
 
 /* QUEM SOMOS */
 .quem-somos {
@@ -354,3 +383,4 @@ nav {
   max-width: 800px;
   margin: auto;
 }
+
