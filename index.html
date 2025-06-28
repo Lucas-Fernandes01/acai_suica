@@ -1,49 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Açaí da Suíça</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <script src="Js/script.js"></script>
-</head>
-<body>
-  <header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Açaí da Suíça</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-HJ9mI+qV...sUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="Js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="Img/Logo.png" alt="Açaí da Suíça Logo" class="logo" />
+        <div class="logo-text">
+          <h1>Sabor que conquista</h1>
+        </div>
+      </div>
 
+      <nav>
+        <div class="nav-links">
+          <a href="index.html" class="active">Início</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="quem-somos.html">Quem Somos</a>
+          <a href="contato.html">Contato</a>
+        </div>
 
-    <div class="logo-container">
-      <img src="Img/Logo.jpg" alt="Açaí da Suíça Logo" class="logo">
-      <div class="logo-text">
-        <h1>Sabor que conquista</h1>
+        <a href="login.html" class="login-btn">Fazer Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-image">
+        <img src="Img/HEADER2.jpg" alt="Marmita Açaí da Suíça" />
+
+        <div class="hero-buttons">
+          <a href="contato.html" class="btn-primary">Entre em contato</a>
+          <a href="cardapio.html" class="btn-secondary">Ver cardápio</a>
+        </div>
+      </div>
+
+       <!-- DESTAQUES -->
+  <section class="destaques">
+    <h2>Combos Especiais</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="Img/acai1.jpg" alt="Combo 1">
+        <h3>Combo Família</h3>
+        <p>Açaí para toda a galera com frutas e toppings à vontade!</p>
+      </div>
+      <div class="card">
+        <img src="Img/acai2.jpg" alt="Combo 2">
+        <h3>Individual Premium</h3>
+        <p>Açaí cremoso com leite condensado e frutas selecionadas.</p>
+      </div>
+      <div class="card">
+        <img src="Img/acai3.jpg" alt="Combo 3">
+        <h3>Kids Divertido</h3>
+        <p>Porção especial para os pequenos com cobertura colorida!</p>
       </div>
     </div>
+  </section>
 
-  <nav>
-    <div class="nav-links">
-      <a href="index.html">Início</a>
-      <a href="cardapio.html">Cardápio</a>
-      <a href="quem-somos.html">Quem Somos</a>
-      <a href="contato.html">Contato</a>
+  <!-- QUEM SOMOS -->
+  <section class="quem-somos">
+    <div class="quem-somos-content">
+      <h2>Quem Somos</h2>
+      <p>O Açaí da Suíça nasceu com a missão de trazer o melhor açaí artesanal para você. Escolhemos ingredientes de qualidade para garantir sabor e frescor em cada pedido. Venha experimentar!</p>
     </div>
-    <a href="login.html" class="login-btn">Fazer Login</a>
-  </nav>
-  </header>
+  </section>
 
+    </main>
 
-  <main>
-    <section>
-      <h2>Bem-vindo ao nosso site!</h2>
-      <p>Monte seu açaí do jeito que quiser e peça com facilidade.</p>
-    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- 1. CONTATO -->
+        <div class="footer-section">
+          <h3>Açaí da Suíça</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> convívio Santa Tereza - R.
+            Bárbara do Amaral Campos, 40 - Nova Suiça, Piracicaba - SP,
+            13402-409
+          </p>
+          <p><i class="fas fa-phone"></i> (19) 99951-0173</p>
+          <p><i class="fas fa-envelope"></i> contato@acaidasuica.com.br</p>
+        </div>
 
-    <section>
-      
-    </section>
-  </main>
+        <!-- 2. HORÁRIOS -->
+        <div class="footer-section">
+          <h3>Horário de Funcionamento</h3>
+          <p><i class="fas fa-clock"></i> Seg a Sex: 17h - 22h</p>
+          <p><i class="fas fa-clock"></i> Domingo: 14h - 22h</p>
+        </div>
 
-  <footer>
-    <p>&copy; 2025 - Açaí da Suíça. Todos os direitos reservados.</p>
-  </footer>
+        <!-- 3. REDES SOCIAIS -->
+        <div class="footer-section">
+          <h3>Redes Sociais</h3>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+          </div>
 
-</body>
+          <!-- 4. MAPA (LINK) -->
+          <div class="footer-section">
+            <h3>Encontre-nos</h3>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.5749843614562!2d-47.69305532574842!3d-22.744033432072634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c637fa6843c5bf%3A0x78c6c3677d48448a!2zQcOnYWkgZGEgU3Vpw6dh!5e0!3m2!1spt-BR!2sbr!4v1751112022098!5m2!1spt-BR!2sbr"
+              width="250"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright © 2025 | Açaí da Suíça</p>
+      </div>
+    </footer>
+  </body>
 </html>

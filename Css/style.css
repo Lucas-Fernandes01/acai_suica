@@ -9,9 +9,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 header {
-  background-color: rebeccapurple;
+  background: white;;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  padding: 15px 5%;
+  padding: 0px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -22,20 +22,29 @@ header {
 
 .logo-container {
   display: flex;
+  padding: 15px;
+  margin-left: 20px;
+  flex-direction: row;
   align-items: center;
   gap: 15px;
 }
 
 .logo {
-  height: 50px;
+  height: 80px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 0px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 .logo-text h1 {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: 700;
+  font-size: 1.3rem;
+  margin: 0;
+  color: rgb(100, 0, 79);
+  font-weight: 600;
 }
 
 /* MENU */
@@ -52,14 +61,15 @@ nav {
 
 .nav-links a {
   text-decoration: none;
-  color: white;
-  font-weight: 500;
+  color: rgb(0, 0, 0);
+  font-weight: 650;
   font-size: 0.95rem;
   position: relative;
-  transition: all 0.3s ease;
+  padding: 1px 0;
+  transition: all 0.2s ease;
 }
 .nav-links a:hover {
-  color: wheat;
+  color: rgb(255, 0, 119);
 }
 
 .nav-links a::after {
@@ -69,18 +79,18 @@ nav {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: white;
-  transition: width 0.3s ease;
+  background-color: rgb(255, 0, 157);
+  transition: width 0.2s ease;
 }
 
 .nav-links a:hover::after {
   width: 100%;
 }
 .login-btn {
-  background: linear-gradient(60deg, rgb(143, 0, 209), rgb(85, 3, 14));
+  background: linear-gradient(60deg, rgb(145, 2, 114), rgb(255, 12, 154));
   color: white;
   padding: 10px 20px;
-  border-radius: 25px;
+  border-radius: 15px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
@@ -150,4 +160,197 @@ nav {
 
 .form-box button:hover {
   background-color: #8905a0;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image img  {
+  width: 100%;
+  display: block;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 13%; /* Ajuste conforme quiser a posição dos botões */
+  left: 65%;
+  transform: translateX(50%);
+}
+
+.btn-primary {
+  background: #e60073;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  top: -50%; /* Ajuste conforme quiser a posição do botão */
+  font-weight: 600;
+  transform: translateY(-20%);
+}
+.btn-primary:hover {
+  background: #b8005c;
+  box-shadow: 0 4px 15px rgba(230, 0, 115, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.btn-secondary {
+  background: #e60073;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  right: 890px; /* Ajuste conforme quiser a posição do botão */
+  position: absolute;
+  position: relative;
+  top: -40px; /* Ajuste conforme quiser a posição do botão */ 
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.btn-secondary:hover {
+  background-color: #b8005c;
+  box-shadow: 0 4px 15px rgba(230, 0, 115, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+/* PAGINA ATIVA */
+
+.nav-links a.active {
+  color: #ff0080; /* Cor destaque do link ativo */
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+/*------------------------*/
+/* FOOTER */
+/*------------------------*/
+.footer {
+  background: linear-gradient(to bottom, rgb(88, 3, 109), rgb(0, 0, 0));
+  color: white;
+  padding: 40px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 200px;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section a {
+  margin-bottom: 10px;
+  color: #ddd;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-section a:hover {
+  color: #ff0077;
+  text-decoration: underline;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 0.9rem;
+  color: #ccc;
+} 
+
+.footer-map {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 50px;
+}
+/* Ícones Font Awesome */
+.footer-section i {
+  color: #ffd54f;
+  font-size: 1rem;
+}
+
+/* DESTAQUES */
+.destaques {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+}
+
+.destaques h2 {
+  margin-bottom: 30px;
+  color: rebeccapurple;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  max-width: 250px;
+  text-align: center;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* QUEM SOMOS */
+.quem-somos {
+  background: linear-gradient(to bottom, rgb(233, 233, 233), rgb(255, 252, 236));
+  color: rgb(0, 0, 0);
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.quem-somos-content {
+  max-width: 800px;
+  margin: auto;
 }

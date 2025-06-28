@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "conexao.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -14,10 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($resultado->num_rows > 0) {
         $usuario = $resultado->fetch_assoc();
         if (password_verify($senha, $usuario["senha"])) {
-            session_start();
             $_SESSION["id_usuario"] = $usuario["id"];
             $_SESSION["nome"] = $usuario["nome"];
+            $_SESSION["endereco"] = $usuario["endereco"] ?? '';
+            $_SESSION["foto"] = $usuario["foto"] ?? '';
+
             header("Location: index.html");
+            exit;
         } else {
             echo "<script>alert('Senha incorreta!');window.history.back();</script>";
         }
