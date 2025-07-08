@@ -1,0 +1,54 @@
+main.quem-somos {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+main h1, main h2, main h3 {
+  color: #6f42c1;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.mvv-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mvv-cards .card {
+  flex: 1 1 250px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.cta {
+  text-align: center;
+  background-color: #6f42c1;
+  color: #fff;
+  padding: 30px 20px;
+  border-radius: 8px;
+}
+
+.cta .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #6f42c1;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.cta .btn:hover {
+  background-color: #f1e7ff;
+}
